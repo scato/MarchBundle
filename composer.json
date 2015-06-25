@@ -1,0 +1,16 @@
+{
+    "name": "scato/march-bundle",
+    "description": "MarchBundle is a Symfony bundle to integrate Tactician with Stomp compatible message queues",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Scato Eggen"
+        }
+    ],
+    "require": {
+      "symfony/symfony": "~2.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.7"
+    }
+}
