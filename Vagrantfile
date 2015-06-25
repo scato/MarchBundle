@@ -73,5 +73,8 @@ Vagrant.configure(2) do |config|
     echo | sudo pecl install stomp
     echo "extension=stomp.so" | sudo tee /etc/php5/mods-available/stomp.ini
     sudo ln -s ../../mods-available/stomp.ini /etc/php5/cli/conf.d/30-stomp.ini
+
+    sudo rabbitmq-plugins enable rabbitmq_stomp
+    sudo /etc/init.d/rabbitmq-server restart
   SHELL
 end
